@@ -1,0 +1,264 @@
+.profile-container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+  position: relative;
+  transition: margin-left 0.3s;
+}
+
+.profile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.username {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.email {
+  font-size: 0.95rem;
+  color: #666;
+}
+
+.role-badge {
+  background: #1976d2;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+}
+
+.menu-icon {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  font-size: 2rem;
+  color: white;
+  background-color: #333;
+  padding: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1100;
+  transition: transform 0.3s ease;
+}
+
+.menu-icon:hover {
+  transform: scale(1.1);
+}
+
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.877);
+  z-index: 999;
+  opacity: 0;
+  animation: fadeInOverlay 0.4s forwards ease-in-out;
+}
+
+@keyframes fadeInOverlay {
+  to {
+    opacity: 1;
+  }
+}
+
+.side-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 20%;
+  background: #000000af; 
+  color: #fff;
+  padding: 2rem 1.5rem;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  transform: translateX(-100%);
+  transition: transform 0.4s ease-in-out;
+  box-shadow: 2px 0 20px rgba(1, 0, 5, 0.842);
+}
+
+.side-menu.open {
+  transform: translateX(0);
+}
+.side-menu.closed {
+  transform: translateX(-100%);
+}
+
+.menu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.menu-header h2 {
+  margin: 0;
+  font-size: 1.6rem;
+  color: #f1f1f1;
+}
+
+.close-btn {
+  width: 26px;
+  height: 26px;
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.close-btn:hover {
+  transform: scale(1.1) rotate(90deg);
+}
+
+.close-line {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+  transform-origin: center;
+  transition: background 0.3s;
+}
+
+.close-line1 {
+  transform: rotate(45deg);
+}
+
+.close-line2 {
+  transform: rotate(-45deg);
+}
+
+.menu-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 2.2rem;
+  margin-top: 1rem;
+}
+
+.menu-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-group h4 {
+  margin: 1.5rem 0 0.75rem 0;
+  font-size: 0.95rem;
+  color: #bbbbbb;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.menu-group a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  margin-left: 10px;
+  margin-top: 0.8rem;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.menu-group a::before {
+  content: '';
+  position: absolute;
+  left: -17px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 6px;
+  height: 6px;
+  background-color: transparent;
+  border-radius: 50%;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.menu-group a:hover {
+  color: #4caf50;
+  transform: translateX(5px);
+}
+
+.menu-group a:hover::before {
+  background-color: #4caf50;
+  transform: translateY(-50%) scale(1.5);
+}
+
+.profile-section {
+  margin-top: 2rem;
+}
+
+.chart-wrapper {
+  background: #f8f8f8;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.course-block {
+  background: #f1f5f9;
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+}
+
+.section-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+.section-item {
+  background: white;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.section-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.section-info p {
+  margin: 0.2rem 0;
+  font-size: 0.9rem;
+  color: #444;
+}
+
+.section-status {
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  background-color: #4caf50;
+  color: white;
+  height: fit-content;
+}
+
+.section-status.lose{
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  background-color: #be1313;
+  color: white;
+  height: fit-content;
+}
+
+
+.loading {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 3rem;
+}

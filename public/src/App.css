@@ -1,0 +1,43 @@
+/* Add your global styles here */
+.app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  .app-header {
+    background-color: #333;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+  }
+
+  .app-header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .app-header nav ul li {
+    margin: 0 1rem;
+  }
+
+  .app-header nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .app-main {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .app-footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+  }

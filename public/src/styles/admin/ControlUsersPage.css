@@ -1,0 +1,84 @@
+.control-users-container {
+    padding: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .control-users-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .refresh-button {
+    display: block;
+    margin: 0 auto 20px;
+    padding: 10px 25px;
+    background-color: #4caf50;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .refresh-button:hover {
+    background-color: #43a047;
+  }
+  
+  .users-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+  }
+  
+  .users-table th,
+  .users-table td {
+    padding: 12px 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .users-table th {
+    background-color: #eeeeee;
+    font-weight: bold;
+  }
+  
+  .role-select {
+    padding: 6px 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+  }
+  
+  .action-button {
+    padding: 6px 12px;
+    margin: 4px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.2s;
+  }
+  
+  .change-role {
+    background-color: #1976d2;
+    color: white;
+  }
+  
+  .change-role:hover {
+    background-color: #1565c0;
+  }
+  
+  .ban-user {
+    background-color: #e53935;
+    color: white;
+  }
+  
+  .ban-user:hover {
+    background-color: #c62828;
+  }
+  

@@ -1,0 +1,134 @@
+.home-main-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.home-container {
+  text-align: center;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.home-container h1 {
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.home-container p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #0056b3;
+}
+
+.app-main-footer {
+  flex: 1;
+  margin-top: 1rem;
+  width: 100%;
+  position: relative;
+}
+
+.app-main-footer>iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+
+.map_api {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.map_container {
+  width: 50%;
+  float: right;
+}
+
+.container {
+  position: relative;
+  height: calc(60vh - 64px);
+  width: 100%;
+}
+
+.map {
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.info-container {
+  top: 50px;
+  width: 50%;
+  height: 100%;
+  float: left;
+  position: relative;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  box-shadow: inset 0 0 60px rgba(0, 0, 0, 0.3);
+  z-index: 2;
+}
+
+.info-content {
+  max-width: 400px;
+  text-align: center;
+  animation: fadeInUp 1s ease;
+}
+
+.info-content h1 {
+  font-size: 2.8em;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.info-content p {
+  font-size: 1.2em;
+  line-height: 1.7;
+  margin-bottom: 15px;
+  color: #e0e0e0;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.maplibregl-popup-content{
+  padding-right: 50px !important;
+}
+
+.maplibregl-popup.maplibregl-popup-anchor-bottom{
+  max-width: 400px !important;
+}
